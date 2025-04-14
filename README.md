@@ -1,8 +1,11 @@
 # 👋 Hat Le Nguyen (Samuel)
 
-**🎓 I graduated from Can Tho University in August 2024 with a degree in information systems.**  
-**🧪 Head of the scientific research project with the topic "Discovering similar theses in an information system".** 
-**🧪 Completed thesis on the topic "Feature extraction in Metagenomic data" with an article accepted for Scopus index**   
+**🎓 I graduated from Can Tho University in August 2024 with a degree in information systems **  
+
+**🧪 Head of the scientific research project with the topic Discovering similar theses in an information system ** 
+
+**🧪 Completed thesis on the topic "Feature extraction in Metagenomic data" with an article accepted for Scopus index **  
+
 **💬 Updating ...!**  
 **📫 Reach me here:**
 
