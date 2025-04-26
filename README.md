@@ -1,20 +1,23 @@
 # 👋 Hat Le Nguyen (Samuel)
 
-**🎓 I graduated from Can Tho University in August 2024 with a degree in information systems **  
+🎓 I graduated from Can Tho University in August 2024 with a degree in information systems 
 
-**🧪 Head of the scientific research project with the topic Discovering similar theses in an information system ** 
+🧪 Head of the scientific research project with the topic Discovering similar theses in an information system 
 
-**🧪 Completed thesis on the topic "Feature extraction in Metagenomic data" with an article accepted for Scopus index **  
+🧪 Completed thesis on the topic "Feature extraction in Metagenomic data" with an article accepted for Scopus index  
 
 **💬 Updating ...!**  
-** Link paper: Feature Selection Based on Ranking Metagenomic Relative Abundance for Inflammatory Bowel Disease Prediction https://link.springer.com/chapter/10.1007/978-3-031-70011-8_9 **
-** Link paper: Fine-Tuned Visualization with T-Distributed Stochastic Neighbor Embeddings on Metagenomic Data for Disease Classification https://link.springer.com/chapter/10.1007/978-981-96-0695-5_2**
-** Student Research Projects (Instructed by Lecturers of FIS): https://fis.ctu.edu.vn/research/integrated-information-systems-laboratory **
+Link paper: Feature Selection Based on Ranking Metagenomic Relative Abundance for Inflammatory Bowel Disease Prediction https://link.springer.com/chapter/10.1007/978-3-031-70011-8_9 
+
+Link paper: Fine-Tuned Visualization with T-Distributed Stochastic Neighbor Embeddings on Metagenomic Data for Disease Classification https://link.springer.com/chapter/10.1007/978-981-96-0695-5_2
+
+Student Research Projects (Instructed by Lecturers of FIS): https://fis.ctu.edu.vn/research/integrated-information-systems-laboratory
 **📫 Reach me here:**
 
 
 [![Gmail](https://img.shields.io/badge/-GMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lnhhat13579@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-GMAIL-D14836?style=for-the-badge&logo=linkedin&logoColor=white)](mailto:https://www.linkedin.com/in/hat-nguyen-0098b92a5/)
+
+[![LinkedIn](https://img.shields.io/badge/-LINKEDIN-D14836?style=for-the-badge&logo=linkedin&logoColor=white)](mailto:https://www.linkedin.com/in/hat-nguyen-0098b92a5/)
 
 
 
