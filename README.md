@@ -7,10 +7,15 @@
 **🧪 Completed thesis on the topic "Feature extraction in Metagenomic data" with an article accepted for Scopus index **  
 
 **💬 Updating ...!**  
+** Link paper: Feature Selection Based on Ranking Metagenomic Relative Abundance for Inflammatory Bowel Disease Prediction https://link.springer.com/chapter/10.1007/978-3-031-70011-8_9 **
+** Link paper: Fine-Tuned Visualization with T-Distributed Stochastic Neighbor Embeddings on Metagenomic Data for Disease Classification https://link.springer.com/chapter/10.1007/978-981-96-0695-5_2**
+** Student Research Projects (Instructed by Lecturers of FIS): https://fis.ctu.edu.vn/research/integrated-information-systems-laboratory **
 **📫 Reach me here:**
 
 
 [![Gmail](https://img.shields.io/badge/-GMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lnhhat13579@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-GMAIL-D14836?style=for-the-badge&logo=linkedin&logoColor=white)](mailto:https://www.linkedin.com/in/hat-nguyen-0098b92a5/)
+
 
 
 ---
