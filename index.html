@@ -551,6 +551,61 @@
             resize: vertical;
             min-height: 150px;
         }
+        .contact-desc {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            font-size: 1.05rem;
+        }
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 1.4rem 2rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            min-width: 260px;
+            backdrop-filter: blur(8px);
+        }
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(255,79,139,0.18);
+        }
+        .contact-card-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.4rem;
+            color: var(--accent-strong);
+        }
+        .contact-card-label {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.2rem;
+        }
+        .contact-card-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
         .social-links {
             display: flex;
             justify-content: center;
@@ -649,8 +704,8 @@
                     <span class="hero-role">AI Engineer</span>
                 </div>
                 <div class="hero-copy">
-                    <span class="hero-kicker">Data Scientist • AI Engineer</span>
-                    <h1 class="hero-title">Samuel Nguyen</h1>
+                    <span class="hero-kicker">AI Engineer • Data Analyst</span>
+                    <h1 class="hero-title">HAT LE NGUYEN (Samuel)</h1>
                     <p class="hero-summary">AI Engineer & Data Analyst | MODEL TRAINING AND DATA PROCESSING, VISUALIZATION | LLMs · NLP · Computer Vision · BI · Looker Studio</p>
                     <div class="tech-badges">
                         <span class="badge">Python</span>
@@ -676,82 +731,16 @@
                 <p>With a passion for solving real-world problems, I've deployed end-to-end AI solutions in production environments, from Vietnamese OCR systems to real-time object detection for safety applications.</p>
                 <div class="facts">
                     <div class="fact">
-                        <div class="fact-number">4+</div>
+                        <div class="fact-number">2+</div>
                         <div>Years Experience</div>
                     </div>
                     <div class="fact">
-                        <div class="fact-number">15+</div>
+                        <div class="fact-number">10+</div>
                         <div>End-to-End Projects</div>
                     </div>
-                    <div class="fact">
-                        <div class="fact-number">3</div>
-                        <div>Production Models</div>
-                    </div>
-                    <div class="fact">
-                        <div class="fact-number">50+</div>
-                        <div>Happy Clients</div>
-                    </div>
                 </div>
             </div>
-            <div class="skills">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">R</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Polars</span>
-                        <span class="skill-tag">Spark</span>
-                        <span class="skill-tag">dbt</span>
-                        <span class="skill-tag">Airflow</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>ML/DL</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">XGBoost</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>NLP</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">spaCy</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">RAG</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Computer Vision</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">YOLO</span>
-                        <span class="skill-tag">Detectron2</span>
-                        <span class="skill-tag">SAM</span>
-                        <span class="skill-tag">OpenCV</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>MLOps/Deployment</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">MLflow</span>
-                        <span class="skill-tag">BentoML</span>
-                        <span class="skill-tag">Streamlit</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">GCP</span>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </section>
 
@@ -895,21 +884,23 @@
 
     <section id="contact" class="fade-in">
         <h2 class="section-title">Get In Touch</h2>
-        <form class="contact-form" action="mailto:samuel.nguyen@example.com" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+       
+        <div class="contact-cards">
+            <a href="tel:+84913579135" class="contact-card">
+                <span class="contact-card-icon"><i data-lucide="phone"></i></span>
+                <div>
+                    <div class="contact-card-label">Phone:</div>
+                    <div class="contact-card-value">+84 353 775 914</div>
+                </div>
+            </a>
+            <a href="mailto:lnhhat13579@gmail.com" class="contact-card">
+                <span class="contact-card-icon"><i data-lucide="mail"></i></span>
+                <div>
+                    <div class="contact-card-label">Email</div>
+                    <div class="contact-card-value">lnhhat13579@gmail.com</div>
+                </div>
+            </a>
+        </div>
         <div class="social-links">
             <a href="#" target="_blank"><i data-lucide="github"></i></a>
             <a href="#" target="_blank"><i data-lucide="linkedin"></i></a>
