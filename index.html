@@ -420,6 +420,41 @@
       gap: 22px;
     }
 
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-height: 100%;
+      border: 1px solid var(--border);
+      border-radius: 23px;
+      padding: 28px;
+      background: var(--surface);
+      transition: .25s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .article-card p {
+      color: var(--muted);
+    }
+
+    .article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
     .project-card {
       border: 1px solid var(--border);
       border-radius: 23px;
@@ -728,6 +763,10 @@
         grid-template-columns: 1fr;
       }
 
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
       nav {
         position: fixed;
         top: 72px;
@@ -799,6 +838,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#article">Arrticle</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-actions">
@@ -1008,6 +1048,31 @@
         </div>
       </div>
     </section> -->
+    <section class="section" id="article">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Arrticle</span>
+          <h2>Some of my research articles</h2>
+        </div>
+        <div class="article-grid">
+          <article class="article-card reveal">
+            <span class="project-type">Article 01</span>
+            <h3>Fine-Tuned Visualization with T-Distributed Stochastic Neighbor Embeddings on Metagenomic Data for Disease Classification</h3>
+            <a class="article-link" href="https://link.springer.com/chapter/10.1007/978-981-96-0695-5_2" target="_blank" rel="noreferrer">Mở bài báo 1 →</a>
+          </article>
+          <article class="article-card reveal">
+            <span class="project-type">Article 02</span>
+            <h3>Feature Selection Based on Ranking Metagenomic Relative Abundance for Inflammatory Bowel Disease Prediction</h3>
+            <a class="article-link" href="https://link.springer.com/chapter/10.1007/978-3-031-70011-8_9" target="_blank" rel="noreferrer">Mở bài báo 2 →</a>
+          </article>
+          <article class="article-card reveal">
+            <span class="project-type">Article 03</span>
+            <h3>The Similar Thesis Detection in a Submission System of the Thesis Report</h3>
+            <a class="article-link" href="https://fis.ctu.edu.vn/research/integrated-information-systems-laboratory" target="_blank" rel="noreferrer">Mở bài báo 3 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="section section-alt" id="contact">
       <div class="container">
         <div class="section-heading reveal">
