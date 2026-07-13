@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio của Mansooho - AI Engineer, Backend Developer và Automation Engineer chuyên xây dựng hệ thống tích hợp API, dữ liệu và tự động hóa quy trình." />
+  <meta name="description"
+    content="Portfolio của Mansooho - AI Engineer, Backend Developer và Automation Engineer chuyên xây dựng hệ thống tích hợp API, dữ liệu và tự động hóa quy trình." />
   <title>Mansooho | AI Engineer & Automation Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <style>
     :root {
       --bg: #07111f;
@@ -35,8 +38,16 @@
       --shadow: 0 24px 70px rgba(48, 100, 140, 0.14);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Inter, sans-serif;
       background:
@@ -47,125 +58,732 @@
       line-height: 1.7;
       transition: background .25s ease, color .25s ease;
     }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    img { display: block; max-width: 100%; }
 
-    .container { width: min(var(--max-width), calc(100% - 40px)); margin: 0 auto; }
-    .section { padding: 96px 0; }
-    .section-alt { background: linear-gradient(180deg, transparent, rgba(56, 189, 248, .035), transparent); }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px;
-      border: 1px solid var(--border); border-radius: 999px; color: var(--primary);
-      background: rgba(56, 189, 248, .07); font-size: 12px; font-weight: 800;
-      letter-spacing: .12em; text-transform: uppercase;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--success); box-shadow: 0 0 14px var(--success); }
-    .section-heading { max-width: 760px; margin-bottom: 44px; }
-    .section-heading h2 { margin-top: 14px; font-size: clamp(32px, 5vw, 52px); line-height: 1.12; letter-spacing: -.04em; }
-    .section-heading p { margin-top: 16px; color: var(--muted); font-size: 17px; }
+
+    button {
+      font: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 96px 0;
+    }
+
+    .section-alt {
+      background: linear-gradient(180deg, transparent, rgba(56, 189, 248, .035), transparent);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--primary);
+      background: rgba(56, 189, 248, .07);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 14px var(--success);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .section-heading h2 {
+      margin-top: 14px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.12;
+      letter-spacing: -.04em;
+    }
+
+    .section-heading p {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 17px;
+    }
 
     header {
-      position: fixed; inset: 0 0 auto; z-index: 1000; border-bottom: 1px solid var(--border);
-      background: color-mix(in srgb, var(--bg) 84%, transparent); backdrop-filter: blur(18px);
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 84%, transparent);
+      backdrop-filter: blur(18px);
     }
-    .nav-wrap { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.02em; }
-    .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; color: #06111f; background: linear-gradient(135deg, var(--primary), var(--secondary)); }
-    nav { display: flex; gap: 8px; }
-    nav a { padding: 10px 13px; border-radius: 10px; color: var(--muted); font-size: 14px; font-weight: 600; }
-    nav a:hover, nav a.active { color: var(--text); background: rgba(56, 189, 248, .09); }
-    .nav-actions { display: flex; align-items: center; gap: 8px; }
-    .icon-btn { width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); cursor: pointer; }
-    #menuBtn { display: none; }
 
-    .hero { min-height: 100svh; display: flex; align-items: center; padding: 118px 0 72px; position: relative; overflow: hidden; }
-    .hero::after { content: ""; position: absolute; width: 440px; height: 440px; right: -170px; bottom: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(56, 189, 248, .18), transparent 68%); pointer-events: none; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr); gap: 56px; align-items: center; }
-    .hero h1 { margin: 20px 0 18px; font-size: clamp(46px, 7vw, 82px); line-height: .98; letter-spacing: -.06em; }
-    .gradient-text { background: linear-gradient(135deg, #fff 15%, var(--primary) 55%, var(--secondary)); -webkit-background-clip: text; color: transparent; }
-    body.light .gradient-text { background: linear-gradient(135deg, #10263a 15%, #0284c7 55%, #4f46e5); -webkit-background-clip: text; color: transparent; }
-    .hero-lead { max-width: 760px; color: var(--muted); font-size: clamp(17px, 2vw, 21px); }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 20px; border-radius: 13px; border: 1px solid transparent; font-weight: 700; transition: .22s ease; }
-    .btn-primary { color: #06111f; background: linear-gradient(135deg, var(--primary), #67e8f9); box-shadow: 0 14px 34px rgba(56, 189, 248, .23); }
-    .btn-secondary { border-color: var(--border); background: var(--surface); }
-    .btn:hover { transform: translateY(-2px); }
-    .hero-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 26px; }
-    .tag { padding: 7px 11px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); background: rgba(255,255,255,.025); font-size: 13px; }
+    .nav-wrap {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-    .profile-card { position: relative; padding: 24px; border: 1px solid var(--border); border-radius: 28px; background: linear-gradient(180deg, var(--surface), rgba(16, 35, 58, .48)); box-shadow: var(--shadow); }
-    .avatar { aspect-ratio: 1; border-radius: 22px; background: linear-gradient(145deg, rgba(56,189,248,.25), rgba(129,140,248,.2)), url('image/avatar.jpg') center/cover no-repeat; border: 1px solid var(--border); }
-    .profile-info { padding-top: 20px; }
-    .profile-info h3 { font-size: 25px; }
-    .profile-info p { color: var(--muted); margin-top: 4px; }
-    .status { display: flex; align-items: center; gap: 9px; margin-top: 18px; padding: 11px 13px; border-radius: 12px; background: rgba(52, 211, 153, .08); color: #6ee7b7; font-size: 13px; font-weight: 700; }
-    .status span { width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
 
-    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; }
-    .panel { border: 1px solid var(--border); border-radius: 22px; background: var(--surface); padding: 28px; }
-    .about-copy p + p { margin-top: 16px; }
-    .about-copy p { color: var(--muted); }
-    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .stat { padding: 20px; border: 1px solid var(--border); border-radius: 17px; background: rgba(255,255,255,.025); }
-    .stat strong { display: block; font-size: 30px; color: var(--primary); }
-    .stat span { color: var(--muted); font-size: 14px; }
-    .skills { margin-top: 24px; }
-    .skills h3 { margin-bottom: 14px; }
-    .skills-list { display: flex; flex-wrap: wrap; gap: 9px; }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #06111f;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
 
-    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
-    .project-card { border: 1px solid var(--border); border-radius: 23px; overflow: hidden; background: var(--surface); transition: .25s ease; }
-    .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-    .project-cover { height: 180px; padding: 22px; display: flex; align-items: flex-end; background: linear-gradient(145deg, rgba(56,189,248,.22), rgba(129,140,248,.18)), radial-gradient(circle at 80% 20%, rgba(255,255,255,.2), transparent 20%); }
-    .project-icon { width: 54px; height: 54px; border-radius: 16px; display: grid; place-items: center; color: #07111f; font-weight: 900; background: linear-gradient(135deg, var(--primary), #a5f3fc); }
-    .project-body { padding: 24px; }
-    .project-type { color: var(--primary); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-    .project-body h3 { margin: 8px 0 10px; font-size: 22px; line-height: 1.3; }
-    .project-body p { color: var(--muted); }
-    .project-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    nav {
+      display: flex;
+      gap: 8px;
+    }
 
-    .timeline { position: relative; margin-left: 10px; }
-    .timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 11px; width: 2px; background: linear-gradient(var(--primary), var(--secondary)); }
-    .timeline-item { position: relative; padding: 0 0 32px 52px; }
-    .timeline-item:last-child { padding-bottom: 0; }
-    .timeline-dot { position: absolute; left: 0; top: 4px; width: 24px; height: 24px; border: 5px solid var(--bg); border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 1px var(--border); }
-    .timeline-year { color: var(--primary); font-weight: 800; font-size: 13px; }
-    .timeline-item h3 { margin: 6px 0 4px; font-size: 21px; }
-    .timeline-company { color: var(--muted); font-weight: 600; }
-    .timeline-item ul { margin: 14px 0 0 18px; color: var(--muted); }
-    .timeline-item li + li { margin-top: 7px; }
+    nav a {
+      padding: 10px 13px;
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-    .contact-box { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .contact-card { display: block; padding: 24px; border: 1px solid var(--border); border-radius: 20px; background: var(--surface); transition: .22s ease; }
-    .contact-card:hover { transform: translateY(-4px); border-color: rgba(56, 189, 248, .45); }
-    .contact-card small { color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
-    .contact-card h3 { margin-top: 8px; font-size: 21px; }
-    .contact-card p { margin-top: 6px; color: var(--muted); }
+    nav a:hover,
+    nav a.active {
+      color: var(--text);
+      background: rgba(56, 189, 248, .09);
+    }
 
-    footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
-    .footer-wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-    .reveal { opacity: 0; transform: translateY(24px); transition: .6s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    #menuBtn {
+      display: none;
+    }
+
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: 118px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: -170px;
+      bottom: -120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, .18), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr);
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      margin: 20px 0 18px;
+      font-size: clamp(46px, 7vw, 82px);
+      line-height: .98;
+      letter-spacing: -.06em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #fff 15%, var(--primary) 55%, var(--secondary));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    body.light .gradient-text {
+      background: linear-gradient(135deg, #10263a 15%, #0284c7 55%, #4f46e5);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 13px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: .22s ease;
+    }
+
+    .btn-primary {
+      color: #06111f;
+      background: linear-gradient(135deg, var(--primary), #67e8f9);
+      box-shadow: 0 14px 34px rgba(56, 189, 248, .23);
+    }
+
+    .btn-secondary {
+      border-color: var(--border);
+      background: var(--surface);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 26px;
+    }
+
+    .tag {
+      padding: 7px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, .025);
+      font-size: 13px;
+    }
+
+    .profile-card {
+      position: relative;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, var(--surface), rgba(16, 35, 58, .48));
+      box-shadow: var(--shadow);
+    }
+
+    .avatar {
+      aspect-ratio: 1;
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(56, 189, 248, .25), rgba(129, 140, 248, .2)), url('image/avatar.jpg') center/cover no-repeat;
+      border: 1px solid var(--border);
+    }
+
+    .profile-info {
+      padding-top: 20px;
+    }
+
+    .profile-info h3 {
+      font-size: 25px;
+    }
+
+    .profile-info p {
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 18px;
+      padding: 11px 13px;
+      border-radius: 12px;
+      background: rgba(52, 211, 153, .08);
+      color: #6ee7b7;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .status span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 28px;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--surface);
+      padding: 28px;
+    }
+
+    .about-copy p+p {
+      margin-top: 16px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      background: rgba(255, 255, 255, .025);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 30px;
+      color: var(--primary);
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .skills {
+      margin-top: 24px;
+    }
+
+    .skills h3 {
+      margin-bottom: 14px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 23px;
+      overflow: hidden;
+      background: var(--surface);
+      transition: .25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .project-cover {
+      height: 180px;
+      padding: 22px;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(145deg, rgba(56, 189, 248, .22), rgba(129, 140, 248, .18)), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, .2), transparent 20%);
+    }
+
+    .project-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: #07111f;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), #a5f3fc);
+    }
+
+    .project-body {
+      padding: 24px;
+    }
+
+    .project-type {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .project-body h3 {
+      margin: 8px 0 10px;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    .project-body p {
+      color: var(--muted);
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 18px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 10px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 11px;
+      width: 2px;
+      background: linear-gradient(var(--primary), var(--secondary));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 32px 52px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      border: 5px solid var(--bg);
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 1px var(--border);
+    }
+
+    .timeline-year {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .timeline-item h3 {
+      margin: 6px 0 4px;
+      font-size: 21px;
+    }
+
+    .timeline-company {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .timeline-item ul {
+      margin: 14px 0 0 18px;
+      color: var(--muted);
+    }
+
+    .timeline-item li+li {
+      margin-top: 7px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .contact-card {
+      display: block;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface);
+      transition: .22s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, .45);
+    }
+
+    .contact-card small {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .contact-label-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(56, 189, 248, .35);
+      border-radius: 8px;
+      background: rgba(56, 189, 248, .1);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .icon-facebook {
+      background: #1877f2;
+      border-color: #1877f2;
+    }
+
+    .icon-youtube {
+      background: #ff0033;
+      border-color: #ff0033;
+    }
+
+    .icon-email {
+      background: #0ea5e9;
+      border-color: #0ea5e9;
+    }
+
+    .icon-linkhub {
+      background: #64748b;
+      border-color: #64748b;
+    }
+
+    .contact-card h3 {
+      margin-top: 8px;
+      font-size: 21px;
+    }
+
+    .contact-card p {
+      margin-top: 6px;
+      color: var(--muted);
+    }
+
+    .contact-meta {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 9px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(56, 189, 248, .32);
+      background: rgba(56, 189, 248, .09);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    .contact-actions {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, .03);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+      transition: .22s ease;
+    }
+
+    .contact-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, .45);
+      background: rgba(56, 189, 248, .11);
+    }
+
+    .contact-link-icon {
+      width: 18px;
+      height: 18px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .icon-github {
+      background: #24292f;
+    }
+
+    .icon-linkedin {
+      background: #0a66c2;
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: .6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
 
     @media (max-width: 900px) {
-      .hero-grid, .about-grid, .contact-box { grid-template-columns: 1fr; }
-      .profile-card { max-width: 520px; }
-      .project-grid { grid-template-columns: 1fr; }
-      nav { position: fixed; top: 72px; left: 20px; right: 20px; display: none; flex-direction: column; padding: 14px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface-strong); box-shadow: var(--shadow); }
-      nav.open { display: flex; }
-      #menuBtn { display: inline-grid; place-items: center; }
+
+      .hero-grid,
+      .about-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-card {
+        max-width: 520px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: fixed;
+        top: 72px;
+        left: 20px;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        padding: 14px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface-strong);
+        box-shadow: var(--shadow);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      #menuBtn {
+        display: inline-grid;
+        place-items: center;
+      }
     }
+
     @media (max-width: 560px) {
-      .container { width: min(100% - 28px, var(--max-width)); }
-      .section { padding: 76px 0; }
-      .hero { padding-top: 104px; }
-      .hero h1 { font-size: 46px; }
-      .hero-actions { flex-direction: column; }
-      .btn { width: 100%; }
-      .stats { grid-template-columns: 1fr; }
-      .panel { padding: 21px; }
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .hero {
+        padding-top: 104px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        padding: 21px;
+      }
     }
   </style>
 </head>
@@ -189,20 +807,27 @@
       </div>
     </div>
   </header>
-
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">AI • Backend • Automation</span>
-          <h1><span class="gradient-text"></span><br />AI Engineer xây dựng giải pháp thực tế.</h1>
-          <p class="hero-lead">Tôi tập trung phát triển hệ thống backend, tích hợp API, quản lý dữ liệu và tự động hóa quy trình bằng Python, PostgreSQL, n8n, React và Google Workspace. Mục tiêu của tôi là biến các bài toán vận hành thành giải pháp có thể triển khai, đo lường và mở rộng.</p>
+          <span class="eyebrow">AI • Python • Automation</span>
+          <h1><span class="gradient-text">Hi, I'm Mansooho</span></h1>
+          <p class="hero-lead">I focus on developing automation systems, AI tools such as github copilot, claude,
+            gemini, chatgpt cursor are the tools I often use to optimize system development time and research to execute
+            tasks. I regularly use API integrations from platforms like gemini and chatgpt into automation flows on N8N.
+            In addition, I often search and research models on hugging face and datasets on kaggle to test and package
+            into APIs to optimize costs. In addition, I also use AI tools to visualize data with BI connecting to Claude
+            via MCP on VS code. My goal is to turn operational problems into deployable, measurable, and scalable
+            solutions.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Xem dự án tiêu biểu →</a>
-            <a class="btn btn-secondary" href="#contact">Kết nối với tôi</a>
+            <a class="btn btn-primary" href="#projects">Typical projects →</a>
+            <a class="btn btn-secondary" href="#contact">Connect with me</a>
           </div>
           <div class="hero-tags">
-            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">n8n</span><span class="tag">REST API</span><span class="tag">Google Apps Script</span><span class="tag">LLM Automation</span>
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span
+              class="tag">React</span><span class="tag">n8n</span><span class="tag">REST API</span><span
+              class="tag">Google Apps Script</span><span class="tag">LLM Automation</span>
           </div>
         </div>
 
@@ -218,87 +843,205 @@
         </aside>
       </div>
     </section>
-
     <section class="section" id="about">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">About me</span>
-          <h2>Từ yêu cầu vận hành đến hệ thống có thể sử dụng.</h2>
-          <p>Tôi kết hợp tư duy backend, dữ liệu, API và quản lý dự án để thiết kế các giải pháp phù hợp với quy trình thực tế của doanh nghiệp.</p>
+          <h2>TOM GROUP VIET NAM COMPANY LIMITED</h2>
+          <p>In a startup environment like HQs, I perform many tasks related to automation, requiring a combination of
+            backend thinking, data analysis, process, and project management to design solutions that fit the actual
+            process. Then present to management how the system delivers, and evaluate the feasibility of the system
+            through the design process.</p>
         </div>
         <div class="about-grid">
           <article class="panel about-copy reveal">
-            <p>Tôi có kinh nghiệm triển khai các dự án tích hợp dữ liệu từ sàn thương mại điện tử, Google Sheets, Meta, Shopify và các nền tảng nội bộ. Công việc của tôi thường bao gồm phân tích yêu cầu, thiết kế luồng dữ liệu, xây dựng API, xử lý database, tự động hóa workflow và theo dõi chất lượng vận hành.</p>
-            <p>Trong vai trò tại BHQ, tôi tham gia điều phối nhiều đầu việc liên quan đến nghiên cứu sản phẩm, quản lý trạng thái listing, landing page, hệ thống báo cáo và thu thập hội thoại. Tôi ưu tiên giải pháp dễ bảo trì, có khả năng mở rộng và tạo ra kết quả rõ ràng cho người sử dụng.</p>
+            <p>As a team leader in the company's automation field, in this role I undertake tasks from receiving
+              business analysis requests to executing and deploying to users.</p>
+            <p>I am responsible for building automation systems on n8n for business processes of the entire company,
+              along with analyzing data on BI. Research models on hugging face and build a local server to manage models
+              as well as fine-tune models to serve many different purposes within the organization.
+              I use MCP of many tools from Antigravity, Claude to perform tasks and optimizations.
+              In addition, I also support automation tools on Hubspot for MKT processes, and Inbound MKT projects via
+              email and SMS.</p>
             <div class="skills">
-              <h3>Năng lực chính</h3>
+              <h3>Mainly used technique</h3>
               <div class="skills-list">
-                <span class="tag">Backend Development</span><span class="tag">API Integration</span><span class="tag">Database Design</span><span class="tag">Workflow Automation</span><span class="tag">Data Processing</span><span class="tag">AI/LLM Integration</span><span class="tag">Project Coordination</span><span class="tag">Technical Troubleshooting</span>
+                <span class="tag">Python Fast API</span><span class="tag">API Integration</span><span
+                  class="tag">Database Design</span><span class="tag">Workflow Automation on n8n</span><span class="tag">Data
+                  Processing</span><span class="tag">AI/LLM Integration</span><span class="tag">Hubspot</span><span class="tag">Bitrix</span>
+                  <span class="tag">Power BI/Looker Studio</span>
               </div>
             </div>
           </article>
           <div class="stats reveal">
-            <div class="stat"><strong>5–7K</strong><span>Dòng dữ liệu xử lý trong mỗi đợt tracking listing</span></div>
-            <div class="stat"><strong>3+</strong><span>Marketplace được nghiên cứu: eBay, Etsy, Reverb</span></div>
-            <div class="stat"><strong>10+</strong><span>Luồng và hạng mục tự động hóa đã triển khai</span></div>
-            <div class="stat"><strong>End-to-end</strong><span>Từ phân tích yêu cầu đến kiểm thử và vận hành</span></div>
+            <div class="stat"><strong>10–15K</strong><span>Data rows processed per tracking listing</span>
+            </div>
+            <div class="stat"><strong>3+</strong><span>Marketplaces researched: eBay, Etsy, Reverb</span></div>
+            <div class="stat"><strong>15</strong><span>Implemented automation flows and categories</span></div>
+            <div class="stat"><strong>End-to-end</strong><span>100 users</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section section-alt" id="projects">
+    <!-- <section class="section section-alt" id="projects">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Selected projects</span>
           <h2>Các dự án tập trung vào dữ liệu, tích hợp và tự động hóa.</h2>
-          <p>Danh sách được xây dựng từ những công việc thực tế đã triển khai trong hệ thống BHQ và các dự án liên quan.</p>
+          <p>Danh sách được xây dựng từ những công việc thực tế đã triển khai trong hệ thống BHQ và các dự án liên quan.
+          </p>
         </div>
         <div class="project-grid">
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">01</div></div><div class="project-body"><span class="project-type">Marketplace Research</span><h3>Hệ thống nghiên cứu sản phẩm đa nền tảng</h3><p>Xây dựng workflow thu thập và chuẩn hóa listing từ eBay, Etsy và Reverb; lưu dữ liệu về Google Sheets để hỗ trợ nghiên cứu thị trường, lọc sản phẩm và lập báo cáo.</p><div class="project-tech"><span class="tag">n8n</span><span class="tag">eBay API</span><span class="tag">Etsy API</span><span class="tag">Google Sheets</span><span class="tag">OAuth</span></div></div></article>
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">02</div></div><div class="project-body"><span class="project-type">Data Automation</span><h3>eBay Listing Status Tracking</h3><p>Thiết kế luồng cập nhật trạng thái ACTIVE, ENDED, UNAVAILABLE và OUT_OF_STOCK cho 5.000–7.000 dòng dữ liệu; tối ưu token, chunking, giới hạn API và thao tác ghi dữ liệu.</p><div class="project-tech"><span class="tag">n8n</span><span class="tag">Batch Processing</span><span class="tag">Rate Limit</span><span class="tag">Data Pipeline</span></div></div></article>
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">03</div></div><div class="project-body"><span class="project-type">Meta Integration</span><h3>Thu thập hội thoại Messenger</h3><p>Nghiên cứu và triển khai các phương án Meta Webhook, respond.io và Chatwoot để lấy dữ liệu cuộc hội thoại, xử lý quyền truy cập, webhook verification và lưu trữ phục vụ quản lý.</p><div class="project-tech"><span class="tag">Meta Webhook</span><span class="tag">Messenger API</span><span class="tag">n8n</span><span class="tag">Google Sheets</span></div></div></article>
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">04</div></div><div class="project-body"><span class="project-type">Landing Page</span><h3>Shopify Summer Sale Landing Page</h3><p>Xây dựng và tối ưu landing page responsive trên Shopify, phát triển section/snippet Liquid, sticky form, validation số điện thoại Mỹ, ghi lead vào Google Sheets và gửi email phản hồi.</p><div class="project-tech"><span class="tag">Shopify Liquid</span><span class="tag">JavaScript</span><span class="tag">Apps Script</span><span class="tag">Google Sheets</span></div></div></article>
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">05</div></div><div class="project-body"><span class="project-type">Reporting System</span><h3>Hệ thống quản lý và báo cáo công việc</h3><p>Phân tích hệ thống quản lý task, báo cáo tuần, KPI, dashboard và dữ liệu đánh giá. Định hướng triển khai phần lõi trước, sau đó tích hợp LLM khi dữ liệu đủ chất lượng.</p><div class="project-tech"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">System Design</span></div></div></article>
-          <article class="project-card reveal"><div class="project-cover"><div class="project-icon">06</div></div><div class="project-body"><span class="project-type">Lead Automation</span><h3>React Form → Google Sheets → Email</h3><p>Thiết kế luồng tiếp nhận thông tin khách hàng từ landing page, chuẩn hóa số điện thoại, ghi dữ liệu marketing và UTM, đồng thời gửi email cảm ơn khi người dùng cung cấp email.</p><div class="project-tech"><span class="tag">React</span><span class="tag">Google Apps Script</span><span class="tag">Email Automation</span><span class="tag">Validation</span></div></div></article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">01</div>
+            </div>
+            <div class="project-body"><span class="project-type">Marketplace Research</span>
+              <h3>Hệ thống nghiên cứu sản phẩm đa nền tảng</h3>
+              <p>Xây dựng workflow thu thập và chuẩn hóa listing từ eBay, Etsy và Reverb; lưu dữ liệu về Google Sheets
+                để hỗ trợ nghiên cứu thị trường, lọc sản phẩm và lập báo cáo.</p>
+              <div class="project-tech"><span class="tag">n8n</span><span class="tag">eBay API</span><span
+                  class="tag">Etsy API</span><span class="tag">Google Sheets</span><span class="tag">OAuth</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">02</div>
+            </div>
+            <div class="project-body"><span class="project-type">Data Automation</span>
+              <h3>eBay Listing Status Tracking</h3>
+              <p>Thiết kế luồng cập nhật trạng thái ACTIVE, ENDED, UNAVAILABLE và OUT_OF_STOCK cho 5.000–7.000 dòng dữ
+                liệu; tối ưu token, chunking, giới hạn API và thao tác ghi dữ liệu.</p>
+              <div class="project-tech"><span class="tag">n8n</span><span class="tag">Batch Processing</span><span
+                  class="tag">Rate Limit</span><span class="tag">Data Pipeline</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">03</div>
+            </div>
+            <div class="project-body"><span class="project-type">Meta Integration</span>
+              <h3>Thu thập hội thoại Messenger</h3>
+              <p>Nghiên cứu và triển khai các phương án Meta Webhook, respond.io và Chatwoot để lấy dữ liệu cuộc hội
+                thoại, xử lý quyền truy cập, webhook verification và lưu trữ phục vụ quản lý.</p>
+              <div class="project-tech"><span class="tag">Meta Webhook</span><span class="tag">Messenger API</span><span
+                  class="tag">n8n</span><span class="tag">Google Sheets</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">04</div>
+            </div>
+            <div class="project-body"><span class="project-type">Landing Page</span>
+              <h3>Shopify Summer Sale Landing Page</h3>
+              <p>Xây dựng và tối ưu landing page responsive trên Shopify, phát triển section/snippet Liquid, sticky
+                form, validation số điện thoại Mỹ, ghi lead vào Google Sheets và gửi email phản hồi.</p>
+              <div class="project-tech"><span class="tag">Shopify Liquid</span><span class="tag">JavaScript</span><span
+                  class="tag">Apps Script</span><span class="tag">Google Sheets</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">05</div>
+            </div>
+            <div class="project-body"><span class="project-type">Reporting System</span>
+              <h3>Hệ thống quản lý và báo cáo công việc</h3>
+              <p>Phân tích hệ thống quản lý task, báo cáo tuần, KPI, dashboard và dữ liệu đánh giá. Định hướng triển
+                khai phần lõi trước, sau đó tích hợp LLM khi dữ liệu đủ chất lượng.</p>
+              <div class="project-tech"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span
+                  class="tag">React</span><span class="tag">System Design</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-cover">
+              <div class="project-icon">06</div>
+            </div>
+            <div class="project-body"><span class="project-type">Lead Automation</span>
+              <h3>React Form → Google Sheets → Email</h3>
+              <p>Thiết kế luồng tiếp nhận thông tin khách hàng từ landing page, chuẩn hóa số điện thoại, ghi dữ liệu
+                marketing và UTM, đồng thời gửi email cảm ơn khi người dùng cung cấp email.</p>
+              <div class="project-tech"><span class="tag">React</span><span class="tag">Google Apps Script</span><span
+                  class="tag">Email Automation</span><span class="tag">Validation</span></div>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section" id="experience">
+    <!-- <section class="section" id="experience">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Experience</span>
-          <h2>Kinh nghiệm phát triển hệ thống và điều phối dự án.</h2>
-          <p>Timeline tập trung vào năng lực và công việc thực tế thay vì sử dụng các thông tin công ty mẫu không thuộc hồ sơ của bạn.</p>
+          
         </div>
         <div class="panel timeline reveal">
-          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">2026 — Hiện tại</span><h3>Project Leader / AI & Automation Engineer</h3><p class="timeline-company">BHQ — Trưởng bộ phận: Mr. Quang TPCN</p><ul><li>Phân tích và điều phối các dự án nghiên cứu sản phẩm, tích hợp nền tảng và tự động hóa quy trình.</li><li>Thiết kế workflow n8n, xử lý API marketplace, Google Workspace và hệ thống báo cáo.</li><li>Tổng hợp tiến độ, xác định ưu tiên và báo cáo các đầu việc cho bộ phận quản lý.</li></ul></div>
-          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">Năng lực chuyên môn</span><h3>Backend, API & Database Development</h3><p class="timeline-company">Python · FastAPI · PostgreSQL · REST API</p><ul><li>Xây dựng và xử lý backend, authentication, CORS, database schema và triển khai ứng dụng trên server/IIS.</li><li>Phân tích lỗi hệ thống, kiểm tra log, database và cấu hình môi trường triển khai.</li></ul></div>
-          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">Định hướng phát triển</span><h3>Applied AI Engineer</h3><p class="timeline-company">LLM · RAG · AI Automation · System Integration</p><ul><li>Tập trung vào các giải pháp AI có khả năng tích hợp với quy trình doanh nghiệp.</li><li>Ưu tiên ứng dụng LLM sau khi hệ thống dữ liệu, quy trình và phần lõi đã ổn định.</li></ul></div>
+          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">2026 — Hiện
+              tại</span>
+            <h3>Project Leader / AI & Automation Engineer</h3>
+            <p class="timeline-company">BHQ — Trưởng bộ phận: Mr. Quang TPCN</p>
+            <ul>
+              <li>Phân tích và điều phối các dự án nghiên cứu sản phẩm, tích hợp nền tảng và tự động hóa quy trình.</li>
+              <li>Thiết kế workflow n8n, xử lý API marketplace, Google Workspace và hệ thống báo cáo.</li>
+              <li>Tổng hợp tiến độ, xác định ưu tiên và báo cáo các đầu việc cho bộ phận quản lý.</li>
+            </ul>
+          </div>
+          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">Năng lực chuyên
+              môn</span>
+            <h3>Backend, API & Database Development</h3>
+            <p class="timeline-company">Python · FastAPI · PostgreSQL · REST API</p>
+            <ul>
+              <li>Xây dựng và xử lý backend, authentication, CORS, database schema và triển khai ứng dụng trên
+                server/IIS.</li>
+              <li>Phân tích lỗi hệ thống, kiểm tra log, database và cấu hình môi trường triển khai.</li>
+            </ul>
+          </div>
+          <div class="timeline-item"><span class="timeline-dot"></span><span class="timeline-year">Định hướng phát
+              triển</span>
+            <h3>Applied AI Engineer</h3>
+            <p class="timeline-company">LLM · RAG · AI Automation · System Integration</p>
+            <ul>
+              <li>Tập trung vào các giải pháp AI có khả năng tích hợp với quy trình doanh nghiệp.</li>
+              <li>Ưu tiên ứng dụng LLM sau khi hệ thống dữ liệu, quy trình và phần lõi đã ổn định.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-
+    </section> -->
     <section class="section section-alt" id="contact">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Contact</span>
           <h2>Kết nối để trao đổi về AI, backend và tự động hóa.</h2>
-          <p>Các kênh bên dưới có thể được thay bằng GitHub, LinkedIn và email chính thức của bạn khi hoàn thiện hồ sơ.</p>
+          <p>Các kênh bên dưới có thể được thay bằng GitHub, LinkedIn và email chính thức của bạn khi hoàn thiện hồ sơ.
+          </p>
         </div>
         <div class="contact-box">
-          <a class="contact-card reveal" href="https://www.facebook.com/ByteLifeMansoohoNg" target="_blank" rel="noreferrer"><small>Facebook</small><h3>ByteLife Mansooho</h3><p>Kết nối và theo dõi nội dung công nghệ, AI và các dự án thực tế.</p></a>
-          <a class="contact-card reveal" href="https://www.youtube.com/@Mansooho-Ng" target="_blank" rel="noreferrer"><small>YouTube</small><h3>Mansooho-Ng</h3><p>Nội dung video, công nghệ và các sản phẩm sáng tạo cá nhân.</p></a>
-          <div class="contact-card reveal"><small>Email</small><h3>Cập nhật email của bạn</h3><p>Thay nội dung này bằng email cá nhân hoặc email công việc trước khi xuất bản.</p></div>
-          <div class="contact-card reveal"><small>GitHub / LinkedIn</small><h3>Thêm hồ sơ chuyên môn</h3><p>Gắn đường dẫn repository và hồ sơ nghề nghiệp để nhà tuyển dụng xem dự án chi tiết.</p></div>
+          <a class="contact-card reveal" href="https://www.facebook.com/ByteLifeMansoohoNg" target="_blank"
+            rel="noreferrer"><small><span class="contact-label-icon icon-facebook" aria-hidden="true">f</span>Facebook</small>
+          </a>
+          <a class="contact-card reveal" href="https://www.youtube.com/@Mansooho-Ng" target="_blank"
+            rel="noreferrer"><small><span class="contact-label-icon icon-youtube" aria-hidden="true">&#9654;</span>YouTube</small>
+          </a>
+          <article class="contact-card reveal"><small><span class="contact-label-icon icon-email" aria-hidden="true">&#9993;</span>Email</small>
+            <div class="contact-meta">
+              <a class="contact-email" href="mailto:lnhhat13579@gmail.com">✉ lnhhat13579@gmail.com</a>
+            </div>
+          </article>
+          <article class="contact-card reveal"><small><span class="contact-label-icon icon-linkhub" aria-hidden="true">&#128279;</span>GitHub / LinkedIn</small>
+            <div class="contact-actions">
+              <a class="contact-link" href="https://github.com/HatNguyenLe" target="_blank" rel="noreferrer"><span class="contact-link-icon icon-github" aria-hidden="true">GH</span>GitHub 1</a>
+              <a class="contact-link" href="https://github.com/NguyenHat1218" target="_blank" rel="noreferrer"><span class="contact-link-icon icon-github" aria-hidden="true">GH</span>GitHub 2</a>
+              <a class="contact-link" href="https://www.linkedin.com/in/hat-mansooho-le-nguyen-0098b92a5/" target="_blank" rel="noreferrer"><span class="contact-link-icon icon-linkedin" aria-hidden="true">in</span>LinkedIn</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
   </main>
-
   <footer>
-    <div class="container footer-wrap"><span>© <span id="year"></span> Mansooho. All rights reserved.</span><span>Designed for AI, automation and practical engineering.</span></div>
+    <div class="container footer-wrap"><span>© <span id="year"></span> Mansooho. All rights
+        reserved.</span><span>&copy; 2024 Samuel Nguyen. Made with ♥ and a lot of coffee.</span></div>
   </footer>
 
   <script>
@@ -336,4 +1079,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
