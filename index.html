@@ -1106,7 +1106,7 @@
   </main>
   <footer>
     <div class="container footer-wrap"><span>© <span id="year"></span> Mansooho. All rights
-        reserved.</span><span>&copy; 2024 Samuel Nguyen. Made with ♥ and a lot of coffee.</span></div>
+      reserved.</span><span>&copy; 2024 Samuel Nguyen. Made with ♥ and a lot of coffee.</span><span id="visitCounter">Lượt truy cập: 0</span></div>
   </footer>
 
   <script>
@@ -1142,6 +1142,13 @@
     });
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const visitCounter = document.getElementById('visitCounter');
+    const visitCountKey = 'portfolio-visit-count';
+    const currentVisitCount = Number.parseInt(localStorage.getItem(visitCountKey) || '0', 10);
+    const nextVisitCount = Number.isNaN(currentVisitCount) ? 1 : currentVisitCount + 1;
+    localStorage.setItem(visitCountKey, String(nextVisitCount));
+    visitCounter.textContent = `Lượt truy cập: ${new Intl.NumberFormat('vi-VN').format(nextVisitCount)}`;
   </script>
 </body>
 
